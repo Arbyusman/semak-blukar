@@ -17,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </head>
 
   <body
@@ -25,7 +30,7 @@
   >
     <!--Nav-->
     <nav
-      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border mb-2 p-4 border-gray-200 dark:border-gray-600"
     >
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -146,6 +151,251 @@
       </div>
     </div>
 
+    <!--FAQ-->
+    <section
+      id="faq"
+      class="flex justify-center place-items-center my-5"
+    >
+      <div class="conatiner flex flex-col justify-center place-items-center ">
+        <div class="flex flex-col place-items-center mb-5">
+            <span class="text-center tracking-wider text-bold text-base text-[#156E3E]">FAQ</span>
+            <span class="text-center text-black font-extrabold text-2xl">Pertanyaan yang sering ditanyakan</span>
+        </div>
+
+        <div
+          class="flex flex-col justify-center mx-2"
+          id="accordion-flush"
+          data-accordion="collapse"
+          data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+          data-inactive-classes="text-gray-500 dark:text-gray-400"
+        >
+          <h2 id="accordion-flush-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border mb-2 p-4 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-1"
+            >
+              <span class="font-bold">
+                Berapa lama durasi maksimal penyewaan?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-1"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-1"
+          >
+            <div
+              class="py-5 border mb-2 p-4 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Tidak ada durasi maksimal penyewaan pada Semak Belukar. Kamu
+                bebas menyewa alat selama yang kamu mau.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border mb-2 p-4 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-2"
+            >
+              <span class="font-bold">Bagaimana proses pengembalian alat?</span>
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-2"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-2"
+          >
+            <div
+              class="py-5 border mb-2 p-4 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Corrupti porro eligendi, nemo sint fugit qui repellat
+                reprehenderit architecto odit quae tempore cum fuga quam.
+                Reprehenderit, architecto voluptates. Nihil iste sapiente ullam
+                facilis, excepturi expedita earum aperiam tenetur dignissimos
+                quam voluptatibus quae molestias quia commodi doloremque animi
+                vero. Reiciendis, voluptatem eius.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border mb-2 p-4 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-3"
+            >
+              <span class="font-bold"
+                >Apakah ada denda jika terlambat mengembalikan atau merusak
+                alat?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-3"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-3"
+          >
+            <div
+              class="py-5 border mb-2 p-4 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                porro sint optio ea eveniet aliquid fuga consequuntur labore
+                unde quae.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border mb-2 p-4 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-4"
+            >
+              <span class="font-bold"
+                >Apakah alat yang disewakan dalam kondisi baik?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-4"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-4"
+          >
+            <div
+              class="py-5 border mb-2 p-4 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                porro sint optio ea eveniet aliquid fuga consequuntur labore
+                unde quae.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-5">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border mb-2 p-4 border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+              data-accordion-target="#accordion-flush-body-5"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-5"
+            >
+              <span class="font-bold"
+                >Apakah perlu memberikan jaminan ketika menyewa alat?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-3 h-3 rotate-180 shrink-0"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5 5 1 1 5"
+                />
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-5"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-5"
+          >
+            <div
+              class="py-5 border mb-2 p-4 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                porro sint optio ea eveniet aliquid fuga consequuntur labore
+                unde quae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END FAQ-->
+
     <!--Footer-->
     <section class="w-full flex justify-center bg-primary">
       <div
@@ -207,9 +457,7 @@
             </div>
           </div>
         </div>
-        <div
-          class="mx-2 flex justify-end place-items-center m-4 w-full md:m-0"
-        >
+        <div class="mx-2 flex justify-end place-items-center m-4 w-full md:m-0">
           <iframe
             class="rounded-sm w-full md:w-2/3"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31635.047160933795!2d111.1215544246963!3d-7.6421247674829464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e798ba346cab7a1%3A0xce1dd95882b9fbaa!2sArea%20Semak%20Belukar%2C%20Tengklik%2C%20Tawangmangu%2C%20Karanganyar%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1732368929001!5m2!1sen!2sid"
@@ -248,6 +496,7 @@
         <span class="flex justify-center md:w-1/3"> </span>
       </div>
     </footer>
+    <!--END Footer-->
 
     <!-- <script>
       var scrollpos = window.scrollY;
