@@ -1,0 +1,14 @@
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.bg-primary {
+  background: #156e3e;
+}
+
+.bg-secondary {
+  background: #EDFFF5;
+}
+.bg-tertiary {
+    background: #B0D6C1;
+}
